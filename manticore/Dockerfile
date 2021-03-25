@@ -1,2 +1,2 @@
 FROM manticoresearch/manticore
-COPY ./ /etc/manticoresearch/
+COPY ./config /etc/manticoresearch/
