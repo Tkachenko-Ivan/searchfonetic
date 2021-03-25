@@ -36,6 +36,8 @@ mysql> select * from rus_metaphone where match('Линейная');
 1 row in set (0.00 sec)
 ```
 
+В контейнере уже имеется mysql, но он как-то не воспринимает кириллицу, поэтому я подключаюсь хоста. 
+
 * HTTP
 ```
 POST localhost:9308/search -d '{"index":"rus_metaphone","query":{"match":{"*":"Линейная"}}}'
