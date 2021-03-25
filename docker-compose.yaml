@@ -1,0 +1,28 @@
+version: '3.1'
+
+services:
+
+  db:
+    container_name: postgres
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: StreetPass
+    ports:
+      - 5432:5432
+
+  manticore:
+    container_name: manticore
+    build: manticore
+    restart: always
+    ports:
+      - 9306:9306
+      - 9308:9308
+    ulimits:
+      nproc: 65535
+      nofile:
+         soft: 65535
+         hard: 65535
+      memlock:
+        soft: -1
+        hard: -1
