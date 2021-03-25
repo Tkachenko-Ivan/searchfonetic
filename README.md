@@ -9,12 +9,13 @@
 3. Через `docker exec`, в контейнере `manticore`, выполняю `gosu manticore indexer --all --rotate`. Это создаёт навые индексы на основе конфига [manticore.conf](/manticore/config/manticore.conf).
 4. Контейнер `manticore` перезапускаю `restart`.
 
-Выполнив в контейнер `manticore`, через `docker exec`, команды: 
+Выполнив в контейнере `manticore`, через `docker exec`, команды: 
 ```
 cd data
 ls
 ```
 Вы должны увидеть:
+
 ![ExecWindow](https://user-images.githubusercontent.com/10295935/112434309-3d9f5e80-8d65-11eb-9098-eb2350cf3a16.png)
 
 Если картинка не соответветствует, например в именах файла присутствует `.new.`, значит что-то пошло не так. Возможно контейнер не был перезапущен, либо индексы созданы под другим пользователем и служба `manticore` не может получить к ним доступ.
