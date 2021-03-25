@@ -1,4 +1,4 @@
-Создание Docker контейнера для тестирования фонетических алгоритмов.
+Полученный из контейнера `manticore` образ, можно найти на Docker Hub: [tkachenkoivan/searchfonetic](https://hub.docker.com/r/tkachenkoivan/searchfonetic).
 
 # Создание контейнера с нуля
 
@@ -65,8 +65,6 @@ POST localhost:9308/search -d '{"index":"rus_metaphone","query":{"match":{"*":"�
     }
 }
 ```
-
-Полученный из контейнера `manticore` образ, можно найти на Docker Hub: [tkachenkoivan/searchfonetic](https://hub.docker.com/r/tkachenkoivan/searchfonetic)
 
 # См. также
 * [Manticore Search Manual](https://manual.manticoresearch.com/Introduction)
