@@ -70,3 +70,5 @@ POST localhost:9308/search -d '{"index":"rus_metaphone","query":{"match":{"*":"�
 # См. также
 * [Manticore Search Manual](https://manual.manticoresearch.com/Introduction)
 * [manticore.conf](https://github.com/manticoresoftware/docker/blob/master/manticore.conf)
+* [Интернационализация поиска по городским адресам. Реализуем русскоязычный Soundex на Sphinx Search](https://habr.com/ru/post/547652/)
+* [Продолжаем интернационализацию поиска по адресам с помощью Sphinx или Manticore. Теперь Metaphone](https://habr.com/ru/post/550690/)
